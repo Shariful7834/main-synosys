@@ -17,6 +17,7 @@ sections:
         The **Philipp's New Leader Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
 
   - block: collection
+    id: news # Add this line to create an anchor ID
     content:
       title: Latest News
       subtitle:
@@ -34,6 +35,24 @@ sections:
     design:
       view: Card
       columns: "1"
+
+  - block: people
+    id: people # Add this line to create an anchor ID
+    content:
+      title: Meet the Team
+      user_groups:
+        - Principal Investigators
+        - Researchers
+        - Grad Students
+        - Administration
+        - Visitors
+        - Alumni
+      sort_by: Params.last_name
+      sort_ascending: true
+    design:
+      show_interests: false
+      show_role: true
+      show_social: true
 
   # - block: markdown
   #   content:
