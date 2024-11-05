@@ -1,0 +1,126 @@
+// Make page header alignment consistent with widget page header alignment
+// .universal-wrapper h1 {
+//   text-align: center;
+// }
+
+// // Center the CTA shortcode button
+// .cta-group {
+//   justify-content: center;
+// }
+.parallax {
+  background-attachment: scroll;
+}
+
+.home-section {
+  background: #f7f7f7;
+  position: relative;
+  padding: 50px 0 30px 0;
+  z-index: 0;
+}
+
+.card {
+  background: none;
+  border-radius: 0ch;
+  text-align: justify;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  color: #003300;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  color: #99cc33;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.portrait-title h2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #000;
+  margin: 20px 0 10px 0;
+}
+
+a,
+h3.article-title a:hover {
+  color: #071013;
+  text-decoration: none;
+  transition: color 0.6s ease;
+  font-weight: bold;
+}
+
+.btn {
+  background: #003300;
+  border: 2px solid black;
+  color: #ffff;
+}
+.btn:hover {
+  background: #ffffff;
+  color: #010000;
+}
+
+a,
+h3.article-title a:hover {
+  color: #071013;
+  text-decoration: none;
+  transition: color 0.6s ease;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #003300;
+  backdrop-filter: blur(8px);
+}
+.nav-link {
+  color: #ffff !important;
+  font-weight: bold !important;
+}
+.nav-link:hover {
+  color: #99cc33 !important;
+}
+.navbar-brand {
+  color: #ffff !important;
+  font-weight: bold !important;
+}
+
+.hero-lead {
+  max-width: 100%;
+  text-align: justify;
+  font-weight: 1;
+}
+.banner {
+  background-color: #075cb0;
+  text-align: center;
+  padding: 20px;
+}
