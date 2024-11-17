@@ -81,9 +81,9 @@ h3.article-title a:hover {
 }
 
 .btn {
-  background: #003300;
+  background: #43375a;
   border: 2px solid black;
-  color: #43375a;
+  color: #ffffff;
 }
 .btn:hover {
   background: #ffffff;
@@ -123,6 +123,23 @@ h3.article-title a:hover {
   background-color: #075cb0;
   text-align: center;
   padding: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    z-index: 1031 !important;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background: #705b98;
+    text-align: center !important;
+    backdrop-filter: blur(8px);
+  }
+}
+
+.fa-bars:before {
+  color: #ffff !important;
 }
 // \
 
