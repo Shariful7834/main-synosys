@@ -12,10 +12,11 @@
 }
 
 .home-section {
-  background: #f7f7f7;
+  background: #f2f1f3;
   position: relative;
-  padding: 50px 0 30px 0;
+  padding: 30px 0 30px 0;
   z-index: 0;
+  // background-image: linear-gradient(90deg, #dbd9d9, #ebe8e8);
 }
 
 .card {
@@ -63,6 +64,9 @@ h3 {
 p {
   text-align: justify;
   line-height: 1.5;
+  font-weight: normal;
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
 }
 
 .portrait-title h2 {
@@ -91,11 +95,24 @@ h3.article-title a:hover {
 }
 
 a,
-h3.article-title a:hover {
+h4.article-title a:hover {
   color: #071013;
   text-decoration: none;
   transition: color 0.6s ease;
-  font-weight: bold;
+  font-weight: semi-bold;
+  line-height: 0px;
+}
+.article-title {
+  font-size: 22px !important;
+  line-height: 1.4rem;
+  margin-bottom: 0px !important;
+}
+
+.article-title a {
+  color: #322944;
+  transition: color 0.6s ease;
+  font-size: 22px !important;
+  line-height: 0px;
 }
 
 .navbar {
@@ -141,7 +158,8 @@ h3.article-title a:hover {
 .fa-bars:before {
   color: #ffff !important;
 }
-// \
+
+//
 
 // 62A8BD
 // E1BD3E
