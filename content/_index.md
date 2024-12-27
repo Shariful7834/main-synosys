@@ -8,13 +8,13 @@ sections:
   - block: hero
     content:
       title: |
-        Philipp's Junior page banner templates
+        Computational Social Science
       image:
-        filename: welcome.jpg
+        filename: landing.png
       text: |
         <br>
 
-        The **Philipp's New Leader Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        Research into the complexity of social systems is represented by the young investigators group. New types of data enable the quantitative description and modelling of social phenomena on a large scale, such as social network structures, public opinion formation, collective behaviour or longitudinal societal; at the same time, digitalization is also changing the mechanisms at work, e.g. through digital communication on social media or algorithmic curation of information. Our aim is to view these systems and developments through the lens of complex systems, but with a strong empirical and experimental perspective from the social sciences.
 
   - block: people
     id: people # Add this line to create an anchor ID
