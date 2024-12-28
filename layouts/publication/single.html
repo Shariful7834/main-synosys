@@ -14,14 +14,14 @@
   {{ partial "page_header.html" . }}
 
   <div class="article-container">
-
+{{/*  
     {{ if .Params.abstract }}
     <h3>{{ i18n "abstract" }}</h3>
     <p class="pub-abstract">{{ .Params.abstract | markdownify }}</p>
-    {{ end }}
+    {{ end }}  */}}
 
     {{/* If the type is Uncategorized, hide the type. */}}
-    {{ if $pub_type_display }}
+    {{/*  {{ if $pub_type_display }}
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10">
@@ -51,7 +51,7 @@
       <div class="col-md-1"></div>
     </div>
     <div class="d-md-none space-below"></div>
-    {{ end }}
+    {{ end }}  */}}
 
     <div class="space-below"></div>
 
