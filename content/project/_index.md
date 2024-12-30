@@ -1,11 +1,24 @@
 ---
-title: Latest Projects
+title: Projects
+date: 2022-10-24
 
-# Listing view
-view: card
+type: landing
 
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ""
-  image: ""
+sections:
+  - block: collection
+    content:
+      title: Our Projects
+      text: |-
+
+      # Filters for projects
+      count: 10
+      filters:
+        category: ""
+        tag: ""
+        publication_type: ""
+      order: desc
+      page_type: project
+    design:
+      view: Card
+      columns: "1" # You can set this to 2 or 3 for multi-column layout
 ---

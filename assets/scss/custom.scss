@@ -158,6 +158,32 @@ h4.article-title a:hover {
 .fa-bars:before {
   color: #ffff !important;
 }
+// Footer Styling
+.centered-link-container {
+  text-align: center; /* Centers the link and image horizontally */
+  margin-top: 20px; /* Adds spacing above the container */
+}
+
+.centered-link-container a {
+  display: inline-block; /* Prevents the link from stretching */
+  text-decoration: none; /* Removes any underline from the link */
+}
+
+// .card-simple {
+//   background: #fff;
+//   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+//   border: 1px solid rgba(0, 0, 0, 0.09);
+//   border-radius: 3px;
+//   margin-top: 5px;
+//   padding: 5px 10px;
+// }
+
+// .col-md-4 {
+//   position: relative;
+//   width: 100%;
+//   padding-right: 20px;
+//   padding-left: 10px;
+// }
 
 //
 
