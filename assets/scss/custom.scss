@@ -142,6 +142,73 @@ h4.article-title a:hover {
   padding: 20px;
 }
 
+.hero-lead {
+  max-width: 100%;
+  text-align: justify;
+  font-weight: 1;
+}
+
+.dont_animate,
+.animate_me {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.animate_me {
+  max-width: 100%;
+  padding-right: 3px;
+  --total: calc(var(--duration) + var(--delay));
+  color: transparent;
+  position: relative;
+  animation: revealText calc(var(--duration) + var(--delay)) forwards;
+  overflow: hidden;
+}
+
+.animate_me::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #fefefe;
+  overflow: hidden;
+  animation: rollIn var(--duration) var(--delay) forwards,
+    rollOut var(--duration) var(--total) forwards;
+}
+
+@keyframes revealText {
+  0% {
+    color: transparent;
+  }
+  90% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes rollIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes rollOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(105%);
+  }
+}
+
 @media (max-width: 991.98px) {
   .navbar-collapse {
     z-index: 1031 !important;
