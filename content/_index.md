@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2025-01-07
 type: landing
 
 sections:
@@ -11,40 +11,44 @@ sections:
       subtitle: ""
       text: >
         <div class="mw-max center cf white tl">
-          <div class="w-50 fl mt5-ns mt1-m mt1 pa3">
-            <div class="f-headline-l lh-title f1-m f1 mb0 mb5-ns">SynoSys</div>
-            <div class="baskerville tl f1-l f4-m f4">The Center Synergy of Systems</div>
-            <div class="baskerville i f2-l f4-m f4 tr mt5-l mt2" style="--duration: 1.5s; --delay: 0s">
-              <span class="dont_animate">"We get lost ...</span>
-              <span class="animate_me">in Science!"</span>
+          <div class="w-80 fl mt5-ns mt1-m mt1 pa3">
+            <div class="f-headline-l lh-title f1-m f1 mb0 mb2-ns">Computational Social Science</div>
+            <div class="baskerville tl f1-l f4-m f4">Research on the Complex Interaction between Digitalization and Society <br> @ SynoSys</div>
             </div>
           </div>
           <div class="w-50 fl tc mt5-ns mt1-m mt1" id="animation">
           </div>
           <script src="https://cdn.jsdelivr.net/npm/synosys_site_visualization@1.1.3"></script>
-          <script>
-            synosys_site_visualization.load("animation");
-          </script>
         </div>
     design:
       background:
         image:
-          filename: "background_banner.jpg"
-          position: center
+          filename: "sketch.jpeg"
+          position: bottom
           size: cover
         text_color_light: true
         image_darken: 0.4
 
   - block: hero
     content:
-      title: |
-        Computational Social Science
+      #title: |
+      #  Unraveling complexities of the online environment
       image:
         filename: landing.png
-      text: |
-        <br>
+      text: 
+        Digitalization has transformed our information environments and social world, giving rise to a complex system with many-to-many interactions. Online platforms such as social media and search engines have created new degrees of freedom while also introducing new constraints, such as the algorithmic curation of content. Meanwhile, generative AI has expanded the means and scope of content production, all of which is almost constantly accessible via smartphones. These developments have changed the nature of public discourse, shifted roles and power, and are affecting democratic systems around the world.
+       
 
-        Research into the complexity of social systems is represented by the young investigators group. New types of data enable the quantitative description and modelling of social phenomena on a large scale, such as social network structures, public opinion formation, collective behaviour or longitudinal societal; at the same time, digitalization is also changing the mechanisms at work, e.g. through digital communication on social media or algorithmic curation of information. Our aim is to view these systems and developments through the lens of complex systems, but with a strong empirical and experimental perspective from the social sciences.
+  - block: hero
+    content:
+
+      text: |
+        The central research questions are: How is public discourse shaped by social networks and sorting algorithms, and how does it benefit certain rhetoric? How do generated images affect attention and emotions and how do they reinforce certain narratives more than others? Establishing causality between these factors in such complex socio-technical systems is an overarching challenge that we aim to address. 
+        <br>
+        To achieve this, we are convinced that looking at those systems from various angles is crucial. While the overarching questions span the whole research groups, we are composed of a variety of disciplinary backgrounds and methods. Digitalization is not only impacting social systems, but also expanding the methods for studying them and enabling us to cover a spectrum of measurements of human behavior between micro and macro levels, ranging from online experiments to field studies in social media and large-scale platform data analysis, while computer simulations may help connect the scales.
+
+
+
 
   - block: people
     id: people # Add this line to create an anchor ID
