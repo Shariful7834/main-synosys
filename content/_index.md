@@ -11,19 +11,25 @@ sections:
       subtitle: ""
       text: >
         <div class="mw-max center cf white tl">
-          <div class="w-80 fl mt5-ns mt1-m mt1 pa3">
-            <div class="f-headline-l lh-title f1-m f1 mb0 mb2-ns">Computational Social Science</div>
-            <div class="baskerville tl f1-l f4-m f4">Research on the Complex Interaction between Digitalization and Society <br> @ SynoSys</div>
+          <div class="w-50 fl mt5-ns mt1-m mt1 pa3">
+            <div class="f-headline-l lh-title f1-m f1 mb0 mb5-ns">SynoSys</div>
+            <div class="baskerville tl f1-l f4-m f4">The Center Synergy of Systems</div>
+            <div class="baskerville i f2-l f4-m f4 tr mt5-l mt2" style="--duration: 1.5s; --delay: 0s">
+              <span class="dont_animate">"We get lost ...</span>
+              <span class="animate_me">in Science!"</span>
             </div>
           </div>
           <div class="w-50 fl tc mt5-ns mt1-m mt1" id="animation">
           </div>
           <script src="https://cdn.jsdelivr.net/npm/synosys_site_visualization@1.1.3"></script>
+          <script>
+            synosys_site_visualization.load("animation");
+          </script>
         </div>
     design:
       background:
         image:
-          filename: "sketch.jpeg"
+          filename: "background_banner.jpg"
           position: bottom
           size: cover
         text_color_light: true
