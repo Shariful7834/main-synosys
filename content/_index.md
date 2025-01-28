@@ -37,18 +37,19 @@ sections:
 
   - block: hero
     content:
-      #title: |
+      title: Creed for Complexity
+
       #  Unraveling complexities of the online environment
       image:
         filename: landing.png
-      text: Digitalization has transformed our information environments and social world, giving rise to a complex system with many-to-many interactions. Online platforms such as social media and search engines have created new degrees of freedom while also introducing new constraints, such as the algorithmic curation of content. Meanwhile, generative AI has expanded the means and scope of content production, all of which is almost constantly accessible via smartphones. These developments have changed the nature of public discourse, shifted roles and power, and are affecting democratic systems around the world.
+      text: SynoSys is Complexity Science. The spirit and perspectives that Complexity Science offers pervade the Center, its people and their activities. We investigate phenomena that seem unrelated at first glance. Yet, we seek and search for underlying rules that connect them. We have an anti-disciplinary attitude, we are neo-generalists, we transcend the borders of traditional disciplines. We explore, we do science with a compass, rather than a map. We get lost in science.
 
-  - block: hero
-    content:
-      text: |
-        The central research questions are: How is public discourse shaped by social networks and sorting algorithms, and how does it benefit certain rhetoric? How do generated images affect attention and emotions and how do they reinforce certain narratives more than others? Establishing causality between these factors in such complex socio-technical systems is an overarching challenge that we aim to address. 
-        <br>
-        To achieve this, we are convinced that looking at those systems from various angles is crucial. While the overarching questions span the whole research groups, we are composed of a variety of disciplinary backgrounds and methods. Digitalization is not only impacting social systems, but also expanding the methods for studying them and enabling us to cover a spectrum of measurements of human behavior between micro and macro levels, ranging from online experiments to field studies in social media and large-scale platform data analysis, while computer simulations may help connect the scales.
+  # - block: hero
+  #   content:
+  #     text: |
+  #       The central research questions are: How is public discourse shaped by social networks and sorting algorithms, and how does it benefit certain rhetoric? How do generated images affect attention and emotions and how do they reinforce certain narratives more than others? Establishing causality between these factors in such complex socio-technical systems is an overarching challenge that we aim to address.
+  #       <br>
+  #       To achieve this, we are convinced that looking at those systems from various angles is crucial. While the overarching questions span the whole research groups, we are composed of a variety of disciplinary backgrounds and methods. Digitalization is not only impacting social systems, but also expanding the methods for studying them and enabling us to cover a spectrum of measurements of human behavior between micro and macro levels, ranging from online experiments to field studies in social media and large-scale platform data analysis, while computer simulations may help connect the scales.
 
   - block: people
     id: people # Add this line to create an anchor ID
