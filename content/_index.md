@@ -35,14 +35,21 @@ sections:
         text_color_light: true
         image_darken: 0.4
 
-  - block: hero
+  - block: youtube
     content:
-      title: Creed for Complexity
+      title: "Creed for Complexity"
+      text: |
+        SynoSys is Complexity Science. The spirit and perspectives that Complexity Science offers pervade the Center, its people and their activities. 
+        We investigate phenomena that seem unrelated at first glance. Yet, we seek and search for underlying rules that connect them. 
+        We have an anti-disciplinary attitude, we are neo-generalists, we transcend the borders of traditional disciplines. We explore, 
+        we do science with a compass, rather than a map. We get lost in science.
+      video_id: "-9VLMfnXtS4"
 
-      #  Unraveling complexities of the online environment
-      image:
-        filename: landing.png
-      text: SynoSys is Complexity Science. The spirit and perspectives that Complexity Science offers pervade the Center, its people and their activities. We investigate phenomena that seem unrelated at first glance. Yet, we seek and search for underlying rules that connect them. We have an anti-disciplinary attitude, we are neo-generalists, we transcend the borders of traditional disciplines. We explore, we do science with a compass, rather than a map. We get lost in science.
+    design:
+      background:
+        gradient_start: "#dbd9d9"
+        gradient_end: "#ebe8e8"
+        text_color_light: false
 
   # - block: hero
   #   content:

@@ -1,0 +1,57 @@
+{{/* Hugo Blox: Custom YouTube Block */}} {{/* Documentation:
+https://hugoblox.com/blocks/ */}} {{/* Initialise */}} {{ $page := .wcPage }} {{
+$block := .wcBlock }} {{ $bg := $block.design.background }}
+
+<div class="row">
+  <div class="col-12 col-md-6 text-center text-md-left">
+    {{ with $block.content.title }}
+    <h1 class="hero-title">{{ . | markdownify }}</h1>
+    {{ end }} {{ with $block.content.text }}
+    <div class="hero-lead">{{ . | $page.RenderString | emojify }}</div>
+    {{ end }} {{/* Call-to-action link */}} {{ if $block.content.cta.url }} {{
+    $pack := or $block.content.cta.icon_pack "fas" }} {{ $pack_prefix := $pack
+    }} {{ if in (slice "fab" "fas" "far" "fal") $pack }} {{ $pack_prefix = "fa"
+    }} {{ end }} {{ $link := $block.content.cta.url }} {{ $scheme := (urls.Parse
+    $link).Scheme }} {{ $target := "" }} {{ if not $scheme }} {{ $link = $link |
+    relLangURL }} {{ else if in (slice "http" "https") $scheme }} {{ $target =
+    "target=\"_blank\" rel=\"noopener\"" }} {{ end }}
+    <p class="cta-btns">
+      <a
+        href="{{ $link | safeURL }}"
+        {{
+        $target
+        |
+        safeHTMLAttr
+        }}
+        class="btn {{if $bg.text_color_light}}btn-light{{else}}btn-primary{{end}} btn-lg mb-md-1"
+      >
+        {{ if $block.content.cta.icon }}
+        <i
+          class="{{ $pack }} {{ $pack_prefix }}-{{ $block.content.cta.icon }} pr-1"
+          aria-hidden="true"
+        ></i>
+        {{ end }} {{ $block.content.cta.label | markdownify | emojify | safeHTML
+        }}
+      </a>
+    </p>
+    {{ end }}
+  </div>
+
+  {{/* YouTube Video Embed */}}
+  <div class="col-12 mx-auto col-md-6 hero-media">
+    {{ if $block.content.video_id }}
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/{{ $block.content.video_id }}?autoplay=0&controls=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+    {{ end }}
+  </div>
+</div>
