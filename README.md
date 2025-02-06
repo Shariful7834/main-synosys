@@ -1,4 +1,4 @@
-# Philipp's new site template
+# Synosys new site template
 
 ![Screenshot 2025-02-06 085725](https://github.com/user-attachments/assets/da132dba-58ca-4724-a662-69bb97709030)
 
