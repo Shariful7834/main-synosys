@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: CSS-Synosys # Website name
-baseURL: "https://css-synosys.github.io/" # Website URL
+title: Main-Synosys # Website name
+baseURL: "https://synosys.github.io/" # Website URL
 
 ############################
 ## LANGUAGE
