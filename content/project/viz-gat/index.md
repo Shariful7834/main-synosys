@@ -26,7 +26,7 @@ image:
 # External link for the project
 external_link: "https://synosys.github.io/viz/wan/wan.html"
 
-# Links
+# Links for visualization of external link
 links:
   - icon: link
     icon_pack: fas
