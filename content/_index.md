@@ -9,31 +9,36 @@ sections:
     content:
       title: ""
       subtitle: ""
-      text: >
+      text: |
         <div class="mw-max center cf white tl">
           <div class="w-50 fl mt5-ns mt1-m mt1 pa3">
-            <div class="f-headline-l lh-title f1-m f1 mb0 mb5-ns">SynoSys</div>
-            <div class="baskerville tl f1-l f4-m f4">The Center Synergy of Systems</div>
-            <div class="baskerville i f2-l f4-m f4 tr mt5-l mt2" style="--duration: 1.5s; --delay: 0s">
-              <span class="dont_animate">"We get lost ...</span>
-              <span class="animate_me">in Science!"</span>
+            <img src="SynoSys_logo_png_combine.png" alt="SynoSys Logo" class="w-90 p-10"> 
+            <div class="tl f1-l f4-m f4 fw6">
+              The Center Synergy of Systems
+            </div>
+            <div class="f2-l f4-m f4 tr mt5-l mt2 pa4" style="--duration: 1.8s; --delay: 0s">
+              <span class="animate_me" style="font-size: 2.2vw;font-weight:300; max-width: 100%;">
+                "We get lost in Science!"
+              </span>
             </div>
           </div>
-          <div class="w-50 fl tc mt5-ns mt1-m mt1" id="animation">
-          </div>
-          <script src="https://cdn.jsdelivr.net/npm/synosys_site_visualization@1.1.3"></script>
+          <div class="w-50 fl tc mt5-ns mt1-m mt1" id="animation"></div>
+          <script src="https://cdn.jsdelivr.net/npm/synosys_site_visualization@1.1.4"></script>
           <script>
             synosys_site_visualization.load("animation");
           </script>
         </div>
+
     design:
       background:
-        image:
-          filename: "background_banner.jpg"
-          position: bottom
-          size: cover
+        # image:
+        #   filename: "background_banner.jpg"
+        #   position: right
+        #   size: cover
         text_color_light: true
-        image_darken: 0.4
+
+        image_darken: 1
+        color: "#000"
 
   - block: youtube
     content:
