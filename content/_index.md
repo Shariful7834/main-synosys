@@ -11,8 +11,8 @@ sections:
       subtitle: ""
       text: |
         <div class="mw-max center cf white tl">
-          <div class="w-50 fl mt5-ns mt1-m mt1 pa3">
-            <img src="SynoSys_logo_png_combine.png" alt="SynoSys Logo" class="w-90 p-10"> 
+          <div class="w-50 fl pa0 ma0">
+            <img src="SynoSys_logo_png_combine.png" alt="SynoSys Logo" class="w-90 p-8"> 
             <div class="tl f1-l f4-m f4 fw6">
               The Center Synergy of Systems
             </div>
