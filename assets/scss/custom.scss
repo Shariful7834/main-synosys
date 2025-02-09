@@ -1,99 +1,79 @@
-// Make page header alignment consistent with widget page header alignment
-// .universal-wrapper h1 {
-//   text-align: center;
-// }
+// Import Google Font
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
 
-// // Center the CTA shortcode button
-// .cta-group {
-//   justify-content: center;
-// }@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-.titillium-web-extralight {
-  font-family: "Titillium Web", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.titillium-web-light {
-  font-family: "Titillium Web", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.titillium-web-regular {
-  font-family: "Titillium Web", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.titillium-web-semibold {
-  font-family: "Titillium Web", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.titillium-web-bold {
-  font-family: "Titillium Web", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.titillium-web-black {
-  font-family: "Titillium Web", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.titillium-web-extralight-italic {
-  font-family: "Titillium Web", serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.titillium-web-light-italic {
-  font-family: "Titillium Web", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.titillium-web-regular-italic {
-  font-family: "Titillium Web", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.titillium-web-semibold-italic {
-  font-family: "Titillium Web", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.titillium-web-bold-italic {
-  font-family: "Titillium Web", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
+// General Font Styling
 * {
   font-family: "Titillium Web", sans-serif;
 }
 
-.parallax {
-  background-attachment: scroll;
+// Font Weights
+.titillium-web {
+  &-extralight {
+    font-weight: 200;
+  }
+  &-light {
+    font-weight: 300;
+  }
+  &-regular {
+    font-weight: 400;
+  }
+  &-semibold {
+    font-weight: 600;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-black {
+    font-weight: 900;
+  }
+
+  // Italic Variations
+  &-extralight-italic {
+    font-weight: 200;
+    font-style: italic;
+  }
+  &-light-italic {
+    font-weight: 300;
+    font-style: italic;
+  }
+  &-regular-italic {
+    font-weight: 400;
+    font-style: italic;
+  }
+  &-semibold-italic {
+    font-weight: 600;
+    font-style: italic;
+  }
+  &-bold-italic {
+    font-weight: 700;
+    font-style: italic;
+  }
 }
 
+// Layout Styles
 .home-section {
   background: #f2f1f3;
   position: relative;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   z-index: 0;
-  // background-image: linear-gradient(90deg, #dbd9d9, #ebe8e8);
 }
 
-.card {
-  background: none;
-  border-radius: 0ch;
-  text-align: justify;
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", serif;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: manual;
 }
 
 h1,
@@ -101,180 +81,79 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: "Titillium Web", serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.25;
   color: #00008c;
-  text-rendering: optimizeLegibility;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual;
 }
-
 h3 {
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.25;
   color: #8082ff;
-  text-rendering: optimizeLegibility;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual;
 }
 
+// Paragraph Styling
 p {
   text-align: justify;
   line-height: 1.5;
   font-weight: normal;
-  margin-top: 0.4rem !important;
-  margin-bottom: 0.4rem !important;
+  margin: 0.4rem 0 !important;
 }
 
-.portrait-title h2 {
-  font-size: 1.5em;
-  font-weight: bolder;
-  color: #000;
-  margin: 20px 0 10px 0;
-}
-
-a,
-h3.article-title a:hover {
-  color: #071013;
+// Links
+a {
+  color: #8082ff;
   text-decoration: none;
   transition: color 0.6s ease;
   font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: #ffa97f;
+  }
 }
 
+// Buttons
 .btn {
   background: #00008c;
   border: 2px solid black;
   color: #ffffff;
-}
-.btn:hover {
-  background: #ffffff;
-  color: #010000;
+
+  &:hover {
+    background: #ffffff;
+    color: #010000;
+  }
 }
 
-a,
-h4.article-title a:hover {
-  color: #071013;
-  text-decoration: none;
-  transition: color 0.6s ease;
-  font-weight: semi-bold;
-  line-height: 0px;
-}
-.article-title {
-  font-size: 22px !important;
-  line-height: 1.4rem;
-  margin-bottom: 0px !important;
-}
-
-.article-title a {
-  color: #322944;
-  transition: color 0.6s ease;
-  font-size: 22px !important;
-  line-height: 0px;
-}
-
+// Navbar
 .navbar {
   background: #00008c;
   backdrop-filter: blur(8px);
 }
 .nav-link {
-  color: #ffff !important;
+  color: #fff !important;
   font-weight: bold !important;
-}
-.nav-link:hover {
-  color: #060 !important;
+
+  &:hover {
+    color: #060 !important;
+  }
 }
 .navbar-brand {
-  color: #ffff !important;
+  color: #fff !important;
   font-weight: bold !important;
 }
 
-.hero-lead {
-  max-width: 100%;
-  text-align: justify;
-  font-weight: 1;
-}
-.banner {
-  background-color: #075cb0;
-  text-align: center;
-  padding: 20px;
-}
-
-// .nowrap {
-//   white-space: nowrap;
-// }
-.dont_animate,
-.animate_me {
-  display: inline-block;
-  font-style: italic;
-  font-size: 0.5vw;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-bottom: 2px;
-}
-
-// .animate_me {
-//   max-width: 100%;
-//   padding-right: 0px;
-//   --total: calc(var(--duration) + var(--delay));
-//   color: transparent;
-//   color: black;
-//   position: relative;
-//   animation: revealText calc(var(--duration) + var(--delay)) forwards;
-//   overflow: hidden;
-// }
-
+// Animation Text
 .animate_me {
   max-width: 100%;
-  width: 100%;
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1;
-  margin: 0;
-  padding-right: 3px;
-  --total: calc(var(--duration) + var(--delay));
   color: #000;
-  position: relative;
-  animation: revealText calc(var(--duration) + var(--delay)) forwards;
-  overflow: hidden;
   font-size: clamp(1rem, 4vw, 2rem);
   text-align: center;
-}
-
-.animate_me::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: "#d4cac7";
-  transform: scaleX(0);
-  transform-origin: left;
-  background: black;
   overflow: hidden;
-  animation: rollIn var(--duration) var(--delay) forwards,
-    rollOut var(--duration) var(--total) forwards;
+  animation: revealText calc(var(--duration) + var(--delay)) forwards;
 }
 
+// Animation Effects
 @keyframes revealText {
-  0% {
-    color: transparent;
-  }
+  0%,
   90% {
     color: transparent;
   }
@@ -291,6 +170,7 @@ h4.article-title a:hover {
     transform: scaleX(1);
   }
 }
+
 @keyframes rollOut {
   from {
     transform: translateX(0);
@@ -300,6 +180,7 @@ h4.article-title a:hover {
   }
 }
 
+// Responsive Navbar
 @media (max-width: 991.98px) {
   .navbar-collapse {
     z-index: 1031 !important;
@@ -313,30 +194,46 @@ h4.article-title a:hover {
   }
 }
 
-.tag-cloud a:active,
-.tag-cloud a:focus,
-.tag-cloud a:hover {
-  color: #8082ff;
-  transform: scale(1.2);
+// Tag Cloud
+.tag-cloud a {
+  &:active,
+  &:focus,
+  &:hover {
+    color: #8082ff;
+    transform: scale(1.2);
+  }
 }
 
-a {
-  color: #8082ff;
+// Footer
+footer {
+  margin: 1rem 0 0 !important;
+  width: 100%;
 }
 
-a:hover,
-a:focus {
-  color: #ffa97f;
+// Centered Image & Link
+.centered-link-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.article-metadata a:hover {
-  color: #8082ff;
+.centered-link-container a {
+  display: inline-block;
 }
 
+.footer-image {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+// Twitter Icon Fix
 .fa-x-twitter:before {
   content: "\e61b";
 }
 
+// Cookie Consent Styling
 .cc-theme-classic .cc-btn:last-child {
   min-width: 140px;
   background: #ffa97f;
@@ -349,72 +246,7 @@ a:focus {
 .cc-banner .cc-message {
   display: block;
   color: #ffa97f;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-width: 100%;
   margin-right: 1em;
 }
-
-.centered-link-container {
-  text-align: center; /* Centers the link and image horizontally */
-  margin-top: 20px; /* Adds spacing above the container */
-}
-
-.centered-link-container a {
-  display: inline-block; /* Prevents the link from stretching */
-  text-decoration: none; /* Removes any underline from the link */
-}
-
-.footer-image {
-  width: 200px; /* Explicit width */
-  height: 100px; /* Explicit height */
-  display: block; /* Ensures image doesn't take extra space */
-  margin: 0 auto; /* Centers the image within the link */
-  object-fit: contain; /* Ensures aspect ratio is maintained */
-}
-footer {
-  margin: 1rem 0 0 !important;
-  width: 100%;
-}
-
-.fa-bars:before {
-  color: #ffff !important;
-}
-// Footer Styling
-.centered-link-container {
-  text-align: center; /* Centers the link and image horizontally */
-  margin-top: 20px; /* Adds spacing above the container */
-}
-
-.centered-link-container a {
-  display: inline-block; /* Prevents the link from stretching */
-  text-decoration: none; /* Removes any underline from the link */
-}
-
-// .card-simple {
-//   background: #fff;
-//   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-//   border: 1px solid rgba(0, 0, 0, 0.09);
-//   border-radius: 3px;
-//   margin-top: 5px;
-//   padding: 5px 10px;
-// }
-
-// .col-md-4 {
-//   position: relative;
-//   width: 100%;
-//   padding-right: 20px;
-//   padding-left: 10px;
-// }
-
-//
-
-// 62A8BD
-// E1BD3E
-// 377EA6
-
-// Philipp Lorenz-Spreen  to  Everyone 3:26 PM
-// 43375A
-// 705B98
-// A586E2
