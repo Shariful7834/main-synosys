@@ -139,66 +139,21 @@ a {
 }
 
 // Animation Text
-.dont_animate,
-.animate_me {
-  display: inline-block;
-  font-style: italic;
-  font-size: 0.5vw;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-bottom: 2px;
-}
-
-// .animate_me {
-//   max-width: 100%;
-//   padding-right: 0px;
-//   --total: calc(var(--duration) + var(--delay));
-//   color: transparent;
-//   color: black;
-//   position: relative;
-//   animation: revealText calc(var(--duration) + var(--delay)) forwards;
-//   overflow: hidden;
-// }
-
 .animate_me {
   max-width: 100%;
-  width: 100%;
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1;
-  margin: 0;
-  padding-right: 3px;
-  --total: calc(var(--duration) + var(--delay));
   color: #000;
-  position: relative;
-  animation: revealText calc(var(--duration) + var(--delay)) forwards;
-  overflow: hidden;
   font-size: clamp(1rem, 4vw, 2rem);
   text-align: center;
-}
-
-.animate_me::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: "#d4cac7";
-  transform: scaleX(0);
-  transform-origin: left;
-  background: black;
   overflow: hidden;
-  animation: rollIn var(--duration) var(--delay) forwards,
-    rollOut var(--duration) var(--total) forwards;
+  animation: revealText calc(var(--duration) + var(--delay)) forwards;
 }
 
+// Animation Effects
 @keyframes revealText {
-  0% {
-    color: transparent;
-  }
+  0%,
   90% {
     color: transparent;
   }
@@ -215,6 +170,7 @@ a {
     transform: scaleX(1);
   }
 }
+
 @keyframes rollOut {
   from {
     transform: translateX(0);
@@ -224,6 +180,7 @@ a {
   }
 }
 
+// Responsive Navbar
 @media (max-width: 991.98px) {
   .navbar-collapse {
     z-index: 1031 !important;
@@ -237,43 +194,94 @@ a {
   }
 }
 
-.tag-cloud a:active,
-.tag-cloud a:focus,
-.tag-cloud a:hover {
-  color: #8082ff;
-  transform: scale(1.2);
+// Tag Cloud
+.tag-cloud a {
+  &:active,
+  &:focus,
+  &:hover {
+    color: #8082ff;
+    transform: scale(1.2);
+  }
 }
 
-// Footer
+/* ======================================= */
+/* ✅ FOOTER STYLES - Restoring Alignment */
+/* ======================================= */
 footer {
-  margin: 1rem 0 0 !important;
   width: 100%;
-}
-
-// Centered Image & Link
-.centered-link-container {
   text-align: center;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+footer p {
+  font-size: 0.75rem;
+  text-align: center !important;
 }
 
-.centered-link-container a {
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-align: center;
   display: inline-block;
+  font-weight: bold;
+  color: #8082ff;
 }
 
-.footer-image {
-  width: 200px;
-  height: 100px;
+/* Footer Logo */
+.footer-logo {
   display: block;
-  margin: 0 auto;
-  object-fit: contain;
+  margin: 10px auto;
+  width: auto;
+  height: 50px;
 }
 
-// Twitter Icon Fix
+/* Footer Text */
+.footer-text {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+/* ======================================= */
+/* ✅ YOUTUBE BLOCK - Justifying Text */
+/* ======================================= */
+.youtube-block p {
+  text-align: justify !important;
+  line-height: 1.6;
+}
+
+/* Twitter Icon Fix */
 .fa-x-twitter:before {
   content: "\e61b";
 }
 
-// Cookie Consent Styling
+/* Cookie Consent Styling */
 .cc-theme-classic .cc-btn:last-child {
   min-width: 140px;
   background: #ffa97f;
@@ -282,19 +290,4 @@ footer {
 .cc-color-override-836873038.cc-window {
   color: #ffa97f;
   background-color: rgb(255, 255, 255);
-}
-.cc-banner .cc-message {
-  display: block;
-  color: #ffa97f;
-  flex: 1 1 auto;
-  max-width: 100%;
-  margin-right: 1em;
-}
-p {
-  text-align: justify !important;
-  line-height: 1.5 !important;
-}
-.youtube-block p {
-  text-align: justify !important;
-  line-height: 1.6;
 }

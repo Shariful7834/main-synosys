@@ -44,7 +44,7 @@ sections:
     content:
       title: "Creed for Complexity"
       text: |
-        <div class="titillium-web-extralight" style="text-align: justify; line-height: 1.4; ">
+        <div class="titillium-web-extralight" style="text-align: justify; line-height: 1.4; font-size:1.2rem ">
         SynoSys is Complexity Science. The spirit and perspectives that Complexity Science offers pervade the Center, its people and their activities. 
         We investigate phenomena that seem unrelated at first glance. Yet, we seek and search for underlying rules that connect them. 
         We have an anti-disciplinary attitude, we are neo-generalists, we transcend the borders of traditional disciplines. We explore, 
