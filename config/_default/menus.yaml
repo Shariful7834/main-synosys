@@ -25,9 +25,12 @@ main:
   - name: Visualization
     url: event
     weight: 55
+  - name: Explorables
+    url: "https://www.complexity-explorables.org"
+    weight: 60
   - name: Contact
     url: contact
-    weight: 60
+    weight: 70
   - name: Jobs
     url: jobs
     weight: 90

@@ -78,11 +78,13 @@
           {{ else }}
 
           <li class="nav-item">
-            <!-- Using .URL directly to avoid altering anchor links -->
-            <a class="nav-link {{ if and $highlight_active_link (eq .URL ("/" | relURL)) }}active{{ end }}" href="{{ .URL | relURL }}">
+            <a class="nav-link {{ if and $highlight_active_link (eq .URL ("/" | relURL)) }}active{{ end }}" 
+               href="{{ .URL }}" 
+               {{ if hasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
               {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
             </a>
           </li>
+          
 
           {{ end }}
           {{ end }}
