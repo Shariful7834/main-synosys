@@ -129,9 +129,9 @@ a {
   color: #fff !important;
   font-weight: bold !important;
 
-  &:hover {
-    color: #060 !important;
-  }
+  // &:hover {
+  //   color: #060 !important;
+  // }
 }
 .navbar-brand {
   color: #fff !important;
@@ -252,6 +252,14 @@ a {
 a:hover,
 a:focus {
   color: #ffa97f;
+}
+.article-title a {
+  color: #8082ff;
+  transition: color 0.6s ease;
+}
+.article-title a:hover {
+  color: #ffa97f;
+  transition: color 0.6s ease;
 }
 
 .article-metadata a:hover {
