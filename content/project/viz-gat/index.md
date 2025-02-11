@@ -2,8 +2,9 @@
 title: "Global Mobility Visualization"
 subtitle: ""
 
+tags: ["interactive-visualization"]
 tags:
-  - interactive visualizations
+  - interactive-visualization
   - networks
 
 summary: "This interactive visualization illustrates the worldwide air-transportation network, connecting approx. 4000 airports globally with roughly 51,000 connections. Over 3 billion passengers travel through this network annually, covering a total distance of over 15 million kilometers daily (under normal conditions), equivalent to three times the radius of our solar system."

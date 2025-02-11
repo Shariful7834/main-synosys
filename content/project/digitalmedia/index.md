@@ -2,7 +2,10 @@
 title: "Democracy and Digital Media"
 subtitle: ""
 
+tags: ["interactive-visualization"]
+
 tags:
+  - interactive-visualization
   - Digital media
   - information
   - Phenomena

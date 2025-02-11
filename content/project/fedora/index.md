@@ -1,9 +1,9 @@
 ---
 title: "FEDORA Project Secures Funding to Explore Post-COVID Ecological Dynamics"
 subtitle: ""
-
+tags: ["interactive-visualization"]
 tags:
-  - complex systems
+  - interactive-visualization
   - COVID-19
   - pandemic
   - ecology

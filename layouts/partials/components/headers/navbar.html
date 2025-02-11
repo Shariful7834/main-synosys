@@ -79,12 +79,12 @@
 
           <li class="nav-item">
             <a class="nav-link {{ if and $highlight_active_link (eq .URL ("/" | relURL)) }}active{{ end }}" 
-               href="{{ .URL }}" 
-               {{ if hasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+               href="{{ .URL | relLangURL }}" 
+               {{ if hasPrefix .URL "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
+               {{ if hasPrefix .URL "#" }}onclick="navigateToSection(event, '{{ .URL }}');"{{ end }}>
               {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
             </a>
           </li>
-          
 
           {{ end }}
           {{ end }}
@@ -120,32 +120,27 @@
         </li>
         {{ end }}
 
-        {{ $show_translations := site.Params.header.navbar.show_translations | default true }}
-        {{ if .IsTranslated | and $show_translations }}
-        <li class="nav-item dropdown i18n-dropdown">
-          <a href="#" class="nav-link {{ if $show_current_language }}dropdown-toggle{{ end }}" data-toggle="dropdown"
-             aria-haspopup="true" aria-label="{{ i18n "languages" | default "Languages" }}">
-            <i class="fas fa-globe mr-1" aria-hidden="true"></i>
-            {{- if $show_current_language -}}
-              <span class="d-none d-lg-inline">{{ index site.Data.i18n.languages .Lang }}</span>
-            {{- end -}}
-          </a>
-          <div class="dropdown-menu">
-            <div class="dropdown-item dropdown-item-active">
-              <span>{{ index site.Data.i18n.languages .Lang }}</span>
-            </div>
-            {{ range .Translations }}
-            <a class="dropdown-item" href="{{ .Permalink }}">
-              <span>{{ index site.Data.i18n.languages .Lang }}</span>
-            </a>
-            {{ end }}
-          </div>
-        </li>
-        {{ end }}
-
       </ul>
 
     </div><!-- /.container -->
   </nav>
 </header>
+
+<script>
+function navigateToSection(event, anchor) {
+  event.preventDefault();
+  if (window.location.pathname !== "/") {
+    window.location.href = "/" + anchor; // Redirect to homepage with anchor
+  } else {
+    const targetElement = document.querySelector(anchor);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 50,
+        behavior: "smooth"
+      });
+    }
+  }
+}
+</script>
+
 {{ end }}
