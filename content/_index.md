@@ -70,7 +70,7 @@ sections:
       title: Meet the Team
       user_groups:
         - Principal Investigators
-        - Researchers
+        - Members
         - Grad Students
         - Administration
         - Visitors

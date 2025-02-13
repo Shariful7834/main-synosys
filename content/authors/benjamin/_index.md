@@ -48,4 +48,5 @@ cite_author: true
 
 email: benjaminfrankmaier@gmail.com
 ---
+
 Ben is a post-doctoral researcher mainly studying how human behavior influences the spread of infectious diseases, but with widespread interest and experience regarding complex systems, network theory, data science, educational outreach, and algorithmic arts. Having a background in physics, He's trained in analyzing and visualizing big data sets as well as searching for the fundamental mechanisms that shape a system’s behavior.
