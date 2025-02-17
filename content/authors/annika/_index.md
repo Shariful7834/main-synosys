@@ -2,6 +2,14 @@
 # Display name
 title: Annika Rose
 
+# Full name (for SEO)
+first_name: Annika
+last_name: Rose
+
+# Username (this should match the folder name)
+authors:
+  - annika
+
 # Citation name
 cite_name: A H Rose
 
@@ -78,7 +86,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - "Members"
 ---
 
 Annika joined the group as a PhD student in 2017. Pre-COVID, she worked on machine learning applications for health monitoring with a focus on mental health. Currently, she works primarily on the Corona Datenspende project.
