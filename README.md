@@ -1,10 +1,10 @@
 # Synosys new site template
+![synosys new](https://github.com/user-attachments/assets/1bc6a794-4847-486d-8507-0b076476cdd3)
 
-![Screenshot 2025-02-06 085725](https://github.com/user-attachments/assets/da132dba-58ca-4724-a662-69bb97709030)
 
 Run the project using - Hugo Server
 
-1. I worked the layout file and modified the files
+1. I worked on the layout and modified the files
 2. page_footer
 3. Page_header
 4. page_metadata
