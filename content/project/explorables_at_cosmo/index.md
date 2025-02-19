@@ -4,12 +4,12 @@ summary: ""
 
 tags: ["interactive-visualization"]
 
-# tags:
-#   - interactive visualizations
-#   - complexity
-#   - complex systems
-#   - exhibition
-#   - cosmo
+tags:
+  - interactive visualizations
+  - complexity
+  - complex systems
+  - exhibition
+  - cosmo
 
 date: "2024-07-20"
 
