@@ -11,7 +11,7 @@ sections:
       text: |-
 
       # Filters for projects
-      count: 10
+      count: 100
       filters:
         category: ""
         tag: ""

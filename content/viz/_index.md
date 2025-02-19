@@ -11,7 +11,7 @@ sections:
       text:
 
       # Filters for projects
-      count: 10 # Adjust as needed
+      count: 100 # Adjust as needed
       filters:
         category: ""
         tag: "interactive-visualization"

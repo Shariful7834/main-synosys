@@ -1,33 +1,20 @@
 ---
-title: "Global Mobility Visualization"
-subtitle: ""
-
-tags: ["interactive-visualization"]
-tags:
-  - interactive-visualization
-  - networks
-
+title: Global Mobility Visualization
 summary: ""
 
-categories: []
+tags: ["interactive-visualization"]
+
 date: "2021-08-10"
-
-lastMod: "2021-08-10"
-
-featured: true
 
 draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: "Worldwide Air Transportation Network"
-  focal_point: Smart
-
-# External link for the project
+# Optional external URL for project (replaces project detail page).
 external_link: "https://synosys.github.io/viz/wan/wan.html"
 
-# Links for visualization of external link
+image:
+  caption: Worldwide Airtransporation Network
+  focal_point: Smart
+
 links:
   - icon: link
     icon_pack: fas
@@ -36,16 +23,7 @@ links:
     target: _blank
 
 authors:
-  -
+  - dirk
 ---
 
-This interactive visualization illustrates the worldwide air-transportation network, connecting approx. 4000 airports globally with roughly 51,000 connections. Over 3 billion passengers travel through this network annually, covering a total distance of over 15 million kilometers daily (under normal conditions), equivalent to three times the radius of our solar system.
-
-We are excited to present the **Global Mobility Visualization**, an interactive tool that provides insights into the worldwide air-transportation network.
-
-This visualization captures data from approximately **4,000 airports** globally, linking them with around **51,000 connections**. Annually, more than **3 billion passengers** navigate this network, covering a **total daily distance of over 15 million kilometers**—equivalent to **three times the radius of our solar system** under normal conditions.
-
-By leveraging **interactive network modeling**, this project highlights key aspects of global mobility and connectivity.
-
-Click the link below to explore the visualization:
-👉 **[Start Visualization](https://synosys.github.io/viz/wan/wan.html)**.
+This interactive visualization illustrates the worldwide air-transportation network. The network connects approx. 4000 airports globally with roughly 51.000 connections. On this network more than 3 billion passengers travel each year. In total, humanity travels a total distance of over 15 million kilometers every day (under normal conditions), that is roughly three times the radius of our solar system.
