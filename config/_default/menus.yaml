@@ -27,5 +27,5 @@ main:
     url: "/contact"
     weight: 70
   - name: Jobs
-    url: "/jobs"
+    url: "/job"
     weight: 90
