@@ -3,7 +3,7 @@ main:
     url: "/tour"
     weight: 10
   - name: Research
-    url: "/event"
+    url: "/research"
     weight: 15
   - name: Projects
     url: "/project"
