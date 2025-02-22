@@ -401,12 +401,13 @@ footer a {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
+  font-size: small;
 }
 
 .card-img-link {
   display: block;
   width: 100%;
-  height: 300px; /* Adjustable height */
+  height: 400px; /* Adjustable height */
   overflow: hidden;
 }
 
@@ -426,8 +427,9 @@ footer a {
 }
 
 .card-title {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 0.7rem;
+  font-weight: semi-bold;
+  margin: 0;
 }
 
 .btn-primary {
