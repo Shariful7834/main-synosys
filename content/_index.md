@@ -88,7 +88,7 @@ sections:
       title: Latest News
       subtitle:
       text:
-      count: 5
+      count: 6
       filters:
         author: ""
         category: ""
