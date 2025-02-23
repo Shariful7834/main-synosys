@@ -401,6 +401,7 @@ footer a {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
+  font-size: medium;
 }
 
 .card-img-link {
@@ -426,8 +427,9 @@ footer a {
 }
 
 .card-title {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: semi-bold;
+  margin: 0;
 }
 
 .btn-primary {
