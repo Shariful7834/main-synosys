@@ -35,14 +35,16 @@ markdownify | emojify }} {{ else if $item.Summary }} {{ $summary = $item.Summary
     <p class="card-text">{{ . }}</p>
     {{ end }}
 
-    <!-- Button (Customizable from .md file) -->
-    {{ if $item.Params.button_text }}
+    <!-- Read More Button (From `links:` in .md file) -->
+    {{ with $item.Params.links }} {{ range first 1 . }}
     <a
-      href="{{ $item.Params.button_url | default $link }}"
+      href="{{ .url }}"
       class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      {{ $item.Params.button_text }}
+      {{ .name | default "Read More" }}
     </a>
-    {{ end }}
+    {{ end }} {{ end }}
   </div>
 </div>
