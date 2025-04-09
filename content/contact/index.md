@@ -35,11 +35,11 @@ sections:
     content:
       title: Contact
       text:
-      email: philipp.lorenz-spreen@tu-dresden.de
+      email: synosys@tu-dresden.de
       coordinates:
         latitude: "51.027611"
         longitude: "13.722230"
-      directions: "Georg-Schumann Str. 7a, 01069 Dresden | S7A | 2nd Floor | Room: 205"
+      directions: "Georg-Schumann Str. 7a, 01069 Dresden | S7A "
 
       # appointment_url: "https://calendly.com"
       # #contact_links:

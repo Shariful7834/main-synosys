@@ -32,6 +32,11 @@ focal_point: ""
 #   E.g. `projects = ["internal-project"]` references
 #   `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
+links:
+  - icon: link
+    icon_pack: fas
+    name: Check out the video
+    url: https://www.youtube.com/watch?v=iwMYuq4np6Y
 ---
 
 On February 6, 2025, Professor Dirk Brockmann, head of our Center Synergy of Systems, delivered his university-wide inaugural lecture at TU Dresden, attracting over 100 attendees from various disciplines.
