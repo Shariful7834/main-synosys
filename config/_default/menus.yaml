@@ -23,6 +23,9 @@ main:
   - name: Explorables
     url: "https://www.complexity-explorables.org"
     weight: 60
+  - name: Teaching
+    url: "/teaching"
+    weight: 65
   - name: Contact
     url: "/contact"
     weight: 70
