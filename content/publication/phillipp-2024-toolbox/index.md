@@ -6,7 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - A Kozyreva 
-- admin
+- philipp
 - S M. Herzog 
 - U K. H. Ecker 
 - S Lewandowsky 

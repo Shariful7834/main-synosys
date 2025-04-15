@@ -7,7 +7,7 @@ summary: ''
 authors:
 - P Nickl 
 - M Moussaïd
-- admin
+- philipp
 
 tags:
 - complex systems

@@ -8,7 +8,7 @@ authors:
 - M Sultan
 - A N Tump
 - N Ehmann
-- admin
+- philipp
 - R Hertwig
 - A Gollwitzer
 - R Kurvers

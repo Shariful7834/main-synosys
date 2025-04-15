@@ -5,7 +5,7 @@ title: 'Real-time assessment of motives for sharing and creating content among h
 subtitle: ''
 summary: ''
 authors:
-- admin
+- philipp
 - R C Arslan
 - A Kozyreva 
 - B Swire-Thompson
