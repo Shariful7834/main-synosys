@@ -1,6 +1,6 @@
 ---
 title: Teaching
-date: 2022-04-01
+date: 2025-04-01
 
 type: landing
 

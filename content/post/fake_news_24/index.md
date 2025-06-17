@@ -2,8 +2,7 @@
 title: "New Research Explores News Values in Perceived Misinformation Across 24 Countries"
 subtitle: ""
 
-authors:
-  - sami
+authors: ["sami"]
 
 tags:
   - Misinformation
@@ -26,15 +25,15 @@ draft: false
 
 # external_link: https://journals.sagepub.com/doi/10.1177/19401612241311893
 
-image:
-focal_point: Smart
+# image:
+# focal_point: Smart
 
-links:
+# links:
 
-- icon: link
-  icon_pack: fas
-  name: Read the full paper
-  url: https://journals.sagepub.com/doi/10.1177/19401612241311893
+# - icon: link
+#   icon_pack: fas
+#   name: Read the full paper
+#   url: https://journals.sagepub.com/doi/10.1177/19401612241311893
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

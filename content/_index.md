@@ -88,7 +88,7 @@ sections:
       title: Latest News
       subtitle:
       text:
-      count: 15
+      count: 6
       filters:
         author: ""
         category: ""
@@ -101,6 +101,90 @@ sections:
     design:
       view: Card
       columns: "1"
+  - block: slider
+    id: tour
+    content:
+      slides:
+        - title: 👋 Welcome to the Computational Social Science Group
+          content: Learn more about what we're working on...
+          align: center
+          background:
+            image:
+              filename: discussion.jpg
+              filters:
+                brightness: 0.7
+            position: right
+            color: "#666"
+        - title: Digital Media and Democracy
+          content: "How is public discourse shaped by social networks and sorting algorithms, and how does it benefit certain rhetoric? In this research area we aim to establishing causality between such information environments and factors that are crucial for democracy, such as institutional trust, affective polarization or support for populists, which is a challenge in such complex socio-technical systems."
+          align: left
+
+          background:
+            image:
+              filename: welcome.jpg
+              filters:
+                brightness: 0.3
+            position: center
+            color: "#555"
+          link:
+            icon:
+            icon_pack: fas
+            text: Learn more
+            url: ../project/digitalmedia/
+
+        - title: Psychology of Digital Propaganda
+          content: "Here, our research focuses on Digital Propaganda, which we understand as orchestrated efforts to influence the public, by personalizing and repeating messages, simplifying complex issues into narratives, and employing emotionally charged content. We ask the question of how digitalization has changed those strategies and how they influence beliefs, attitudes, and behavior."
+          align: left
+          background:
+            image:
+              filename: contact.jpg
+              filters:
+                brightness: 0.3
+            position: center
+            color: "#555"
+          link:
+            icon:
+            icon_pack: fas
+            text: Learn more
+            url: ../project/propaganda
+        - title: Text as Data
+          content: "Natural Language Processing (NLP) has come a long way, and now researchers can analyze text data in ways that were impossible just a few decades ago. Social media posts, transcripts of political debates, and parliamentary speeches are now valuable data sources for studying human behavior, political discourse, and societal trends. This opens up a bunch of new questions and gives us new ways to study them."
+          align: left
+          background:
+            image:
+              filename: screen.jpg
+              filters:
+                brightness: 0.3
+            position: center
+            color: "#555"
+          link:
+            icon:
+            icon_pack: fas
+            text: Learn more
+            url: ../project/nlp
+        - title: Want to learn more?
+          content: "Get in touch!"
+          align: center
+          background:
+            image:
+              filename: office2.jpg
+              filters:
+                brightness: 0.5
+            position: center
+            color: "#333"
+          link:
+            icon:
+            icon_pack: fas
+            text: Contact
+            url: ../contact/
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: "500px"
+      is_fullscreen: false
+      # Automatically transition through slides?
+      loop: false
+      # Duration of transition between slides (in ms)
+      interval: 5000
 
   # - block: markdown
   #   content:

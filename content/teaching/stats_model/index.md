@@ -9,8 +9,7 @@ tags:
 
 summary: ""
 
-authors:
-  - kamil
+authors: ["kamil"]
 
 categories: []
 date: "2025-04-01"
@@ -36,17 +35,17 @@ focal_point: ""
 
 Opal: <a href="https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/48880648204/CourseNode/1743474776839555003" target="_blank">Link here</a>.
 
-Time Thursdays, 5. DS
+Time  Thursdays, 5. DS
 
-Location BAR/0I89
+Location  BAR/0I89
 
-Department Computer Science
+Department   Computer Science
 
-Modules INF-BAS3 (Software- und Web-Engineering)
+Modules   INF-BAS3 (Software- und Web-Engineering)
 
-Language English
+Language  English
 
-Assessment oral exam
+Assessment  oral exam
 
 ## Description:
 
@@ -60,34 +59,36 @@ No prior statistical modeling experience is required. If you're familiar with Py
 
 Part 1: General Introduction
 
-Week 1 Introduction to statistical modeling: goals and principles
+Week 1        Introduction to statistical modeling: goals and principles
 
-Week 2 Linear regression: the foundational model, applications and limitations
+Week 2      Linear regression: the foundational model, applications and limitations
 
 Part 2: Selected Generalized Linear Models
 
-Week 1 Logistic regression 1: analysis of likes and dislikes
 
-Week 2 Logistic regression 2: multivariate analysis
+Week 1      Logistic regression 1: analysis of likes and dislikes
 
-Week 3 Ordinal regression 1: stars and other likert-type ratings
+Week 2      Logistic regression 2: multivariate analysis
 
-Week 4 Ordinal regression 2: modeling distributional parameters
+Week 3      Ordinal regression 1: stars and other likert-type ratings
 
-Week 5 Beta regression 1: slider-type ratings
+Week 4      Ordinal regression 2: modeling distributional parameters
 
-Week 6 Beta regression 2: modeling distributional parameters
+Week 5      Beta regression 1: slider-type ratings
 
-Week 7 Interim summary, additional exercises, and other GLMs
+Week 6      Beta regression 2: modeling distributional parameters
+
+Week 7      Interim summary, additional exercises, and other GLMs
+
 
 Part 3: Experimental design & hierarchical models
 
-Week 1 Modeling between- and within-individual experimental designs
+Week 1      Modeling between- and within-individual experimental designs
 
-Week 2 Hierarchical models 1: introduction
+Week 2      Hierarchical models 1: introduction
 
-Week 3 Hierarchical models 2: logistic and ordinal regression
+Week 3      Hierarchical models 2: logistic and ordinal regression
 
-Week 4 Hierarchical models 3: Beta regression
+Week 4      Hierarchical models 3: Beta regression
 
-Week 5 Final session, Q&A, discussion and feedback
+Week 5      Final session, Q&A, discussion and feedback

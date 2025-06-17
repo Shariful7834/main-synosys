@@ -2,28 +2,6 @@
 title: "New Study Reveals Who’s Most Vulnerable to Misinformation—and why"
 subtitle: ""
 
-authors:
-  - Phillip Lorenz-Spreen
-#   - Simon Haunhorst
-#   - Diana Dudziak
-#   - Carmen Scheibenbogen
-#   - Martina Seifert
-#   - Franziska Sotzny
-#   - Carsten Finke
-#   - Uta Behrends
-#   - Konrad Aden
-#   - Stefan Schreiber
-#   - Dirk Brockmann
-#   - Paul Burggraf
-#   - Wilhelm Bloch
-#   - Claudia Ellert
-#   - Anuradha Ramoji
-#   - Juergen Popp
-#   - Philipp Reuken
-#   - Martin Walter
-#   - Andreas Stallmach
-#   - Christian Puta
-
 tags:
   - Misinformation
   - Political Alignment
@@ -38,18 +16,12 @@ date: "2024-11-29"
 
 lastMod: "2024-11-29"
 
+authors: ["admin"]
+
+
 featured: true
 
 draft: false
-image:
-focal_point: Smart
-
-links:
-
-- icon: link
-  icon_pack: fas
-  name: Read the full paper
-  url: https://www.pnas.org/doi/10.1073/pnas.2409329121
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -64,4 +36,6 @@ focal_point: ""
 #   Otherwise, set `projects = []`.
 ---
 
-Our junior research group leader Philipp Lorenz-Spreen, whose work focuses on the digital information environment and among other things on misinformation, has co-authored a comprehensive meta-analysis of over 256,000 decisions from thousands of participants that sheds light on who is most susceptible to misinformation and the factors behind it. Their research reveals that susceptibility depends less on formal education and more on individual and contextual factors, such as age, analytical thinking, and political alignment. Older adults and those with strong analytical skills tend to discern truth from falsehood better, though they are also more skeptical, which means they classify more news as false overall. A tendency called “true news bias” emerges when people encounter news aligning with their political beliefs or previously seen content, making them more prone to believe information without scrutiny. These findings offer valuable insights for his further studies of the spreading dynamics of misinformation and the development of interventions that help people to navigate the information environment of the internet. [Read in full here](https://doi.org/10.1073/pnas.2409329121).
+Our junior research group leader Philipp Lorenz-Spreen, whose work focuses on the digital information environment and among other things on misinformation, has co-authored a comprehensive meta-analysis of over 256,000 decisions from thousands of participants that sheds light on who is most susceptible to misinformation and the factors behind it. Their research reveals that susceptibility depends less on formal education and more on individual and contextual factors, such as age, analytical thinking, and political alignment. 
+
+Older adults and those with strong analytical skills tend to discern truth from falsehood better, though they are also more skeptical, which means they classify more news as false overall. A tendency called “true news bias” emerges when people encounter news aligning with their political beliefs or previously seen content, making them more prone to believe information without scrutiny. These findings offer valuable insights for his further studies of the spreading dynamics of misinformation and the development of interventions that help people to navigate the information environment of the internet. [here](https://doi.org/10.1073/pnas.2409329121).
