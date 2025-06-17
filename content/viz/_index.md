@@ -32,5 +32,5 @@ sections:
       page_type: project
     design:
       view: Card
-      columns: "2"
+      columns: "3"
 ---

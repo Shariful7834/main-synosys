@@ -1,0 +1,17 @@
+{{ $src := .Get "src" }} {{ $height := .Get "height" | default "600px" }} {{
+$caption := .Get "caption" }}
+
+<div class="interactive-viz-container">
+  {{ if $caption }}
+  <div class="viz-title">{{ $caption }}</div>
+  {{ end }}
+
+  <iframe
+    src="{{ $src | relURL }}"
+    width="100%"
+    height="{{ $height }}"
+    style="border: none; overflow: hidden"
+    frameborder="0"
+    scrolling="no"
+  ></iframe>
+</div>
