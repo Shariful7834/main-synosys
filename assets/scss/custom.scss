@@ -151,31 +151,24 @@ a {
 }
 
 .animate_me {
-  max-width: 100%;
-  padding-right: 0px;
-  --total: calc(var(--duration) + var(--delay));
-  color: transparent;
-  color: black;
-  position: relative;
-  animation: revealText calc(var(--duration) + var(--delay)) forwards;
+  display: inline-block;
+  font-style: italic;
+  font-size: 0.5vw;
+  white-space: nowrap;
   overflow: hidden;
-}
-
-.animate_me {
+  padding-bottom: 2px;
   max-width: 100%;
   width: 100%;
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1;
+  padding: 1px;
   margin: 0;
   padding-right: 3px;
   --total: calc(var(--duration) + var(--delay));
   color: #000;
   position: relative;
   animation: revealText calc(var(--duration) + var(--delay)) forwards;
-  overflow: hidden;
   font-size: clamp(1rem, 4vw, 2rem);
   text-align: center;
 }
@@ -245,14 +238,6 @@ a {
   transform: scale(1.2);
 }
 
-a {
-  color: #8082ff;
-}
-
-a:hover,
-a:focus {
-  color: #ffa97f;
-}
 .article-title a {
   color: #8082ff;
   transition: color 0.6s ease;
@@ -371,21 +356,6 @@ footer a {
   line-height: 1.6;
 }
 
-/* Twitter Icon Fix */
-.fa-x-twitter:before {
-  content: "\e61b";
-}
-
-/* Cookie Consent Styling */
-.cc-theme-classic .cc-btn:last-child {
-  min-width: 140px;
-  background: #ffa97f;
-}
-
-.cc-color-override-836873038.cc-window {
-  color: #ffa97f;
-  background-color: rgb(255, 255, 255);
-}
 .col {
   position: relative;
   width: 100%;
@@ -424,44 +394,6 @@ h4.article-title a:hover {
   line-height: 1.4rem;
   margin-bottom: 0px !important;
 }
-// ///.card-custom
-// .card-custom {
-//   display: flex;
-//   flex-direction: column;
-//   border-radius: 10px;
-//   overflow: hidden;
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-//   background-color: white;
-//   font-size: medium;
-// }
-
-// .card-img-link {
-//   display: block;
-//   width: 100%;
-//   height: 300px; /* Adjustable height */
-//   overflow: hidden;
-// }
-
-// .card-img-link img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: contain; /* Ensures full image fits inside */
-//   transition: transform 0.3s ease-in-out;
-// }
-
-// .card-img-link:hover img {
-//   transform: scale(1.05); /* Smooth zoom effect on hover */
-// }
-
-// .card-body {
-//   padding: 15px;
-// }
-
-// .card-title {
-//   font-size: 0.8rem;
-//   font-weight: semi-bold;
-//   margin: 0;
-// }
 
 .btn-primary {
   display: inline-block;
@@ -634,48 +566,3 @@ h4.article-title a:hover {
     margin-bottom: 15px;
   }
 }
-
-// /* Make "Current and past projects" banner text white */
-// .hero .hero-title,
-// .hero h1,
-// .hero .section-heading,
-// .block-hero .hero-title,
-// .block-hero h1 {
-//   color: white !important;
-// }
-
-// /* Ensure all text in hero blocks with background images is white */
-// .block-hero[data-background] h1,
-// .block-hero[data-background] .hero-title,
-// .hero-section h1,
-// .hero-section .section-heading {
-//   color: white !important;
-//   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-// }
-
-// /* Specific targeting for "Current and past projects" title on projects page */
-// section[data-wc-block-id] .hero-title,
-// .wc-block-hero .hero-title,
-// .home-section .hero-title,
-// section .hero-title {
-//   color: white !important;
-//   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
-// }
-
-// /* Alternative selectors for the projects page hero */
-// body[data-page-path*="project"] .hero-title,
-// .hero-title:contains("Current and past projects") {
-//   color: white !important;
-//   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
-// }
-
-// /* Force white color for ALL hero titles with background images */
-// .home-section h1,
-// .home-section .hero-title,
-// section h1.hero-title,
-// div[style*="background"] h1,
-// div[style*="background"] .hero-title {
-//   color: white !important;
-//   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-//   font-weight: bold !important;
-// }

@@ -15,9 +15,8 @@ sections:
             <img src="SynoSys_logo_png_combine.png" alt="SynoSys Logo" class="w-90 p-8"> 
             <div class="tl f1-l f4-m f4 fw6">
               The Center Synergy of Systems
-            </div>
-            <div class="f2-l f4-m f4 tr mt5-l mt2 pa4" style="--duration: 1.8s; --delay: 0s">
-              <span class="animate_me" style="font-size: 2.2vw;font-weight:300; max-width: 100%;">
+            </div>            <div class="f2-l f4-m f4 tr mt5-l mt2 pa4" style="--duration: 1.8s; --delay: 0s">
+              <span class="animate_me" style="font-size: 1.5vw;font-weight:300; max-width: 100%;">
                 "We get lost in Science!"
               </span>
             </div>
