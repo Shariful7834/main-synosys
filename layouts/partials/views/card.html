@@ -9,10 +9,10 @@ $item.Summary }} {{ else }} {{ $summary = $item.Content }} {{ end }} {{/*
 Extract first paragraph and handle word limit */}} {{ $clean := $summary |
 markdownify | plainify | htmlUnescape }} {{ $paragraphs := split $clean "\n\n"
 }} {{ $firstParagraph := index $paragraphs 0 }} {{ $trimmed := $firstParagraph |
-strings.TrimSpace }} {{/* Split into words and check count */}} {{ $allWords :=
-split $trimmed " " }} {{ $wordCount := len $allWords }} {{ $truncated :=
-$trimmed }} {{ if gt $wordCount 200 }} {{ $truncated = delimit (first 200
-$allWords) " " }} {{ $truncated = printf "%s…" $truncated }} {{ end }}
+strings.TrimSpace }} {{/* Split into words and limit to 50 words */}} {{
+$allWords := split $trimmed " " }} {{ $wordCount := len $allWords }} {{
+$truncated := $trimmed }} {{ if gt $wordCount 50 }} {{ $truncated = delimit
+(first 50 $allWords) " " }} {{ $truncated = printf "%s…" $truncated }} {{ end }}
 
 <div class="card-simple view-card">
   {{ if eq $item.Type "event" }}
