@@ -5,11 +5,14 @@ $target = `target="_blank" rel="noopener"` }} {{ end }} {{/* Get summary
 fallback logic */}} {{ $summary := "" }} {{ if $item.Params.summary }} {{
 $summary = $item.Params.summary }} {{ else if $item.Params.abstract }} {{
 $summary = $item.Params.abstract }} {{ else if $item.Summary }} {{ $summary =
-$item.Summary }} {{ else }} {{ $summary = $item.Content }} {{ end }} {{/* Strip
-HTML/Markdown and truncate to 50 words */}} {{ $clean := $summary | markdownify
-| plainify | htmlUnescape }} {{ $words := split $clean " " }} {{ $truncated :=
-delimit (first 100 $words) " " }} {{ if gt (len $words) 100 }} {{ $truncated =
-printf "%s…" $truncated }} {{ end }}
+$item.Summary }} {{ else }} {{ $summary = $item.Content }} {{ end }} {{/*
+Extract first paragraph and handle word limit */}} {{ $clean := $summary |
+markdownify | plainify | htmlUnescape }} {{ $paragraphs := split $clean "\n\n"
+}} {{ $firstParagraph := index $paragraphs 0 }} {{ $trimmed := $firstParagraph |
+strings.TrimSpace }} {{/* Split into words and check count */}} {{ $allWords :=
+split $trimmed " " }} {{ $wordCount := len $allWords }} {{ $truncated :=
+$trimmed }} {{ if gt $wordCount 200 }} {{ $truncated = delimit (first 200
+$allWords) " " }} {{ $truncated = printf "%s…" $truncated }} {{ end }}
 
 <div class="card-simple view-card">
   {{ if eq $item.Type "event" }}
@@ -26,7 +29,7 @@ printf "%s…" $truncated }} {{ end }}
   {{ else }} {{ partial "page_metadata" (dict "page" $item "is_list" 1) }} {{
   end }} {{ $resource := partial "blox-core/functions/get_featured_image.html"
   $item }} {{ $anchor := $item.Params.image.focal_point | default "Smart" }} {{
-  with $resource }} {{ $image := .Fill (printf "808x455 %s" $anchor) }} {{ if ne
+  with $resource }} {{ $image := .Resize "800x" }} {{ if ne
   $image.MediaType.SubType "gif" }} {{ $image = $image.Process "webp" }} {{ end
   }}
   <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>

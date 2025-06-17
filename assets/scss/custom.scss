@@ -498,3 +498,130 @@ h4.article-title a:hover {
   background-color: #00008c !important;
   color: white !important;
 }
+
+/* =================================== */
+/* ✅ PINTEREST MASONRY LAYOUT STYLES */
+/* =================================== */
+
+/* Pinterest Masonry Container */
+.pinterest-masonry {
+  column-count: 3;
+  column-gap: 20px;
+  column-fill: balance;
+  padding: 20px 0;
+}
+
+/* Individual Pinterest Items */
+.pinterest-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+/* Enhanced Card Styling for Pinterest Look */
+.pinterest-item .card-simple {
+  background: white;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: none;
+}
+
+.pinterest-item .card-simple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Pinterest Image Styling */
+.pinterest-item .img-hover-zoom {
+  overflow: hidden;
+  border-radius: 0;
+  width: 100%;
+  display: block;
+}
+
+.pinterest-item .article-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.pinterest-item .img-hover-zoom:hover .article-banner {
+  transform: scale(1.03);
+}
+
+/* Ensure images are not constrained by any parent elements */
+.pinterest-item img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.pinterest-item a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Pinterest Card Content */
+.pinterest-item .article-title {
+  font-size: 1rem !important;
+  line-height: 1.3 !important;
+  margin: 15px 0 10px 0 !important;
+  padding: 0 15px;
+}
+
+.pinterest-item .article-title a {
+  color: #2c3e50 !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+}
+
+.pinterest-item .article-title a:hover {
+  color: #8082ff !important;
+}
+
+.pinterest-item .article-style {
+  font-size: 0.75rem !important;
+  line-height: 1.5 !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  padding: 0 15px 15px 15px;
+  margin: 0 !important;
+  text-align: justify !important;
+}
+
+.pinterest-item .article-metadata {
+  padding: 0 15px 15px 15px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Responsive Pinterest Layout */
+@media (max-width: 992px) {
+  .pinterest-masonry {
+    column-count: 2;
+    column-gap: 15px;
+  }
+
+  .pinterest-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pinterest-masonry {
+    column-count: 1;
+    column-gap: 0;
+    padding: 15px 0;
+  }
+
+  .pinterest-item {
+    margin-bottom: 20px;
+  }
+}
