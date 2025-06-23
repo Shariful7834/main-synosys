@@ -27,7 +27,6 @@
     font-weight: 900;
   }
 
-  // Italic Variations
   &-extralight-italic {
     font-weight: 200;
     font-style: italic;
@@ -61,7 +60,6 @@
 // Headings
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -69,6 +67,7 @@ h6 {
   font-weight: bold;
   margin: 1rem 0 0.5rem;
   line-height: 1.25;
+  color: #00008c;
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -76,15 +75,17 @@ h6 {
   hyphens: manual;
 }
 
-h1,
-h2,
-h4,
-h5,
-h6 {
-  color: #00008c;
-}
 h3 {
+  font-family: "Titillium Web", serif;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  line-height: 1.25;
   color: #8082ff;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: manual;
 }
 
 // Paragraph Styling
@@ -108,15 +109,65 @@ a {
   }
 }
 
+h3.article-title a,
+h4.article-title a {
+  color: #8082ff !important;
+  text-decoration: none;
+  transition: color 0.6s ease;
+  font-weight: bold;
+
+  &:hover {
+    color: #ffa97f !important;
+  }
+}
+
+// Post titles styling for all variations
+.article-title,
+.article-title a,
+.post-title,
+.post-title a,
+h1.article-title,
+h1.article-title a,
+h2.article-title,
+h2.article-title a,
+h1.post-title,
+h1.post-title a,
+h2.post-title,
+h2.post-title a {
+  color: #8082ff !important;
+  text-decoration: none;
+  transition: color 0.6s ease;
+
+  &:hover {
+    color: #ffa97f !important;
+  }
+}
+
+// Card and post listing titles
+.card .article-title a,
+.card .post-title a,
+.post-preview .article-title a,
+.post-list .article-title a,
+.post-item .article-title a,
+.blog-post .article-title a {
+  color: #8082ff !important;
+  text-decoration: none;
+  transition: color 0.6s ease;
+
+  &:hover {
+    color: #ffa97f !important;
+  }
+}
+
 // Buttons
 .btn {
   background: #00008c;
   border: 2px solid black;
-  color: #ffffff;
+  color: #ffff;
 
   &:hover {
-    background: #ffffff;
-    color: #010000;
+    border: 2px solid #8082ff;
+    color: #8082ff;
   }
 }
 
@@ -128,10 +179,6 @@ a {
 .nav-link {
   color: #fff !important;
   font-weight: bold !important;
-
-  // &:hover {
-  //   color: #060 !important;
-  // }
 }
 .navbar-brand {
   color: #fff !important;
@@ -139,7 +186,6 @@ a {
 }
 
 // Animation Text
-
 .dont_animate,
 .animate_me {
   display: inline-block;
@@ -151,12 +197,6 @@ a {
 }
 
 .animate_me {
-  display: inline-block;
-  font-style: italic;
-  font-size: 0.5vw;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-bottom: 2px;
   max-width: 100%;
   width: 100%;
   display: flex;
@@ -238,15 +278,6 @@ a {
   transform: scale(1.2);
 }
 
-.article-title a {
-  color: #8082ff;
-  transition: color 0.6s ease;
-}
-.article-title a:hover {
-  color: #ffa97f;
-  transition: color 0.6s ease;
-}
-
 .article-metadata a:hover {
   color: #8082ff;
 }
@@ -275,18 +306,15 @@ a {
 }
 
 .centered-link-container {
-  text-align: center; /* Centers the link and image horizontally */
-  margin-top: 20px; /* Adds spacing above the container */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .centered-link-container a {
-  display: inline-block; /* Prevents the link from stretching */
-  text-decoration: none; /* Removes any underline from the link */
+  display: inline-block;
+  text-decoration: none;
 }
 
-/* ======================================= */
-/* ✅ FOOTER STYLES - Restoring Alignment */
-/* ======================================= */
 footer {
   width: 100%;
   text-align: center;
@@ -301,7 +329,6 @@ footer p {
   text-align: center !important;
 }
 
-/* Footer Links */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -316,7 +343,6 @@ footer a {
   color: #8082ff;
 }
 
-/* Footer Logo */
 .footer-logo {
   display: block;
   margin: 10px auto;
@@ -324,7 +350,6 @@ footer a {
   height: 50px;
 }
 
-/* Footer Text */
 .footer-text {
   font-size: 14px;
   color: #6c757d;
@@ -333,7 +358,6 @@ footer a {
   line-height: 1.5;
 }
 
-/* Footer Copyright */
 .footer-copyright {
   font-size: 12px;
   color: #999;
@@ -341,16 +365,12 @@ footer a {
   margin-top: 5px;
 }
 
-/* Footer Responsiveness */
 @media (max-width: 768px) {
   .footer-links {
     flex-direction: column;
   }
 }
 
-/* ======================================= */
-/* ✅ YOUTUBE BLOCK - Justifying Text */
-/* ======================================= */
 .youtube-block p {
   text-align: justify !important;
   line-height: 1.6;
@@ -369,32 +389,6 @@ footer a {
   text-align: justify;
 }
 
-a,
-h4.article-title a:hover {
-  color: #071013;
-  text-decoration: none;
-  transition: color 0.6s ease;
-  font-weight: semi-bold;
-  line-height: 0px;
-}
-.article-title {
-  font-size: 22px !important;
-  line-height: 1.4rem;
-  margin-bottom: 0px !important;
-}
-
-.article-title a {
-  color: #322944;
-  transition: color 0.6s ease;
-  font-size: 22px !important;
-  line-height: 0px;
-}
-.article-style {
-  font-size: 0.7rem !important;
-  line-height: 1.4rem;
-  margin-bottom: 0px !important;
-}
-
 .btn-primary {
   display: inline-block;
   margin-top: 10px;
@@ -408,34 +402,24 @@ h4.article-title a:hover {
 
 .btn-primary:hover {
   background-color: #fff;
+  color: #00008c;
 }
 
-// only custom styles for banner text
-/* Force white text on hero block title */
-/* Change background color on hover for dropdown items */
-/* Entire dropdown menu background */
 .navbar-nav .dropdown-menu {
   background-color: #00008c !important;
-  border: none !important; /* optional: removes border */
+  border: none !important;
 }
 
-/* Individual items inside the dropdown */
 .navbar-nav .dropdown-menu .dropdown-item {
   background-color: #00008c !important;
   color: white !important;
 }
 
-/* Hover effect for each item */
 .navbar-nav .dropdown-menu .dropdown-item:hover {
   background-color: #00008c !important;
   color: white !important;
 }
 
-/* =================================== */
-/* ✅ PINTEREST MASONRY LAYOUT STYLES */
-/* =================================== */
-
-/* Pinterest Masonry Container */
 .pinterest-masonry {
   column-count: 3;
   column-gap: 20px;
@@ -443,7 +427,6 @@ h4.article-title a:hover {
   padding: 20px 0;
 }
 
-/* Individual Pinterest Items */
 .pinterest-item {
   display: inline-block;
   width: 100%;
@@ -453,7 +436,6 @@ h4.article-title a:hover {
   -webkit-column-break-inside: avoid;
 }
 
-/* Enhanced Card Styling for Pinterest Look */
 .pinterest-item .card-simple {
   background: white;
   border-radius: 0;
@@ -470,7 +452,6 @@ h4.article-title a:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Pinterest Image Styling */
 .pinterest-item .img-hover-zoom {
   overflow: hidden;
   border-radius: 0;
@@ -492,7 +473,6 @@ h4.article-title a:hover {
   transform: scale(1.03);
 }
 
-/* Ensure images are not constrained by any parent elements */
 .pinterest-item img {
   max-width: 100%;
   height: auto;
@@ -509,7 +489,6 @@ h4.article-title a:hover {
   padding: 0;
 }
 
-/* Pinterest Card Content */
 .pinterest-item .article-title {
   font-size: 1rem !important;
   line-height: 1.3 !important;
@@ -518,13 +497,14 @@ h4.article-title a:hover {
 }
 
 .pinterest-item .article-title a {
-  color: #2c3e50 !important;
+  color: #8082ff !important;
   font-weight: 600 !important;
   text-decoration: none;
+  transition: color 0.6s ease;
 }
 
 .pinterest-item .article-title a:hover {
-  color: #8082ff !important;
+  color: #ffa97f !important;
 }
 
 .pinterest-item .article-style {
@@ -543,7 +523,6 @@ h4.article-title a:hover {
   color: #888;
 }
 
-/* Responsive Pinterest Layout */
 @media (max-width: 992px) {
   .pinterest-masonry {
     column-count: 2;
