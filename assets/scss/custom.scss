@@ -26,7 +26,6 @@
   &-black {
     font-weight: 900;
   }
-
   &-extralight-italic {
     font-weight: 200;
     font-style: italic;
@@ -60,6 +59,7 @@
 // Headings
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
@@ -68,27 +68,12 @@ h6 {
   margin: 1rem 0 0.5rem;
   line-height: 1.25;
   color: #00008c;
-  text-rendering: optimizeLegibility;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  hyphens: manual;
 }
-
 h3 {
-  font-family: "Titillium Web", serif;
-  font-weight: bold;
-  margin: 1rem 0 0.5rem;
-  line-height: 1.25;
   color: #8082ff;
-  text-rendering: optimizeLegibility;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  hyphens: manual;
 }
 
-// Paragraph Styling
+// Paragraphs
 p {
   text-align: justify;
   line-height: 1.5;
@@ -109,50 +94,16 @@ a {
   }
 }
 
-h3.article-title a,
-h4.article-title a {
-  color: #8082ff !important;
-  text-decoration: none;
-  transition: color 0.6s ease;
-  font-weight: bold;
-
-  &:hover {
-    color: #ffa97f !important;
-  }
-}
-
-// Post titles styling for all variations
+// Article and post titles
 .article-title,
 .article-title a,
 .post-title,
-.post-title a,
-h1.article-title,
-h1.article-title a,
-h2.article-title,
-h2.article-title a,
-h1.post-title,
-h1.post-title a,
-h2.post-title,
-h2.post-title a {
+.post-title a {
   color: #8082ff !important;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.6s ease;
-
-  &:hover {
-    color: #ffa97f !important;
-  }
-}
-
-// Card and post listing titles
-.card .article-title a,
-.card .post-title a,
-.post-preview .article-title a,
-.post-list .article-title a,
-.post-item .article-title a,
-.blog-post .article-title a {
-  color: #8082ff !important;
-  text-decoration: none;
-  transition: color 0.6s ease;
+  line-height: 1.25 !important;
 
   &:hover {
     color: #ffa97f !important;
@@ -176,43 +127,36 @@ h2.post-title a {
   background: #00008c;
   backdrop-filter: blur(8px);
 }
-.nav-link {
-  color: #fff !important;
-  font-weight: bold !important;
-}
+.nav-link,
 .navbar-brand {
   color: #fff !important;
   font-weight: bold !important;
 }
 
-// Animation Text
-.dont_animate,
-.animate_me {
-  display: inline-block;
-  font-style: italic;
-  font-size: 0.5vw;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-bottom: 2px;
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    z-index: 1031 !important;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background: #00008c;
+    text-align: center !important;
+    backdrop-filter: blur(8px);
+  }
 }
 
+// Animation text
 .animate_me {
-  max-width: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1px;
-  margin: 0;
-  padding-right: 3px;
-  --total: calc(var(--duration) + var(--delay));
+  font-style: italic;
+  font-size: clamp(1rem, 4vw, 2rem);
   color: #000;
   position: relative;
   animation: revealText calc(var(--duration) + var(--delay)) forwards;
-  font-size: clamp(1rem, 4vw, 2rem);
-  text-align: center;
 }
-
 .animate_me::after {
   content: "";
   position: absolute;
@@ -220,19 +164,16 @@ h2.post-title a {
   left: 0;
   width: 100%;
   height: 100%;
-  color: "#d4cac7";
+  background: black;
   transform: scaleX(0);
   transform-origin: left;
-  background: black;
   overflow: hidden;
   animation: rollIn var(--duration) var(--delay) forwards,
     rollOut var(--duration) var(--total) forwards;
 }
 
 @keyframes revealText {
-  0% {
-    color: transparent;
-  }
+  0%,
   90% {
     color: transparent;
   }
@@ -240,7 +181,6 @@ h2.post-title a {
     color: #d4cac7;
   }
 }
-
 @keyframes rollIn {
   from {
     transform: scaleX(0);
@@ -258,290 +198,52 @@ h2.post-title a {
   }
 }
 
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    z-index: 1031 !important;
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    background: #00008c;
-    text-align: center !important;
-    backdrop-filter: blur(8px);
-  }
-}
-
-.tag-cloud a:active,
-.tag-cloud a:focus,
-.tag-cloud a:hover {
-  color: #8082ff;
-  transform: scale(1.2);
-}
-
-.article-metadata a:hover {
-  color: #8082ff;
-}
-
-.fa-x-twitter:before {
-  content: "\e61b";
-}
-
-.cc-theme-classic .cc-btn:last-child {
-  min-width: 140px;
-  background: #ffa97f;
-}
-
-.cc-color-override-836873038.cc-window {
-  color: #ffa97f;
-  background-color: rgb(255, 255, 255);
-}
-.cc-banner .cc-message {
-  display: block;
-  color: #ffa97f;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  max-width: 100%;
-  margin-right: 1em;
-}
-
-.centered-link-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.centered-link-container a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-footer {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-}
-footer p {
-  font-size: 0.75rem;
-  text-align: center !important;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-footer a {
-  text-align: center;
-  display: inline-block;
-  font-weight: bold;
-  color: #8082ff;
-}
-
-.footer-logo {
-  display: block;
-  margin: 10px auto;
-  width: auto;
-  height: 50px;
-}
-
-.footer-text {
-  font-size: 14px;
-  color: #6c757d;
-  text-align: center;
-  margin-top: 5px;
-  line-height: 1.5;
-}
-
-.footer-copyright {
-  font-size: 12px;
-  color: #999;
-  text-align: center;
-  margin-top: 5px;
-}
-
-@media (max-width: 768px) {
-  .footer-links {
-    flex-direction: column;
-  }
-}
-
-.youtube-block p {
-  text-align: justify !important;
-  line-height: 1.6;
-}
-
-.col {
-  position: relative;
-  width: 100%;
-  padding-right: 5px;
-  padding-left: 15px;
-}
-
-.card {
-  background: none;
-  border-radius: 0ch;
-  text-align: justify;
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #00008c;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #fff;
-  color: #00008c;
-}
-
-.navbar-nav .dropdown-menu {
-  background-color: #00008c !important;
-  border: none !important;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item {
-  background-color: #00008c !important;
-  color: white !important;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-  background-color: #00008c !important;
-  color: white !important;
-}
-
+// Pinterest Masonry
 .pinterest-masonry {
-  column-count: 3;
+  column-count: 3 !important;
   column-gap: 20px;
-  column-fill: balance;
   padding: 20px 0;
 }
-
 .pinterest-item {
-  display: inline-block;
-  width: 100%;
-  margin: 0 0 20px 0;
   break-inside: avoid;
-  page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
+  margin-bottom: 20px;
 }
-
 .pinterest-item .card-simple {
   background: white;
   border-radius: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  border: none;
-  margin: 0;
   padding: 13px;
+  transition: all 0.3s ease;
 }
-
 .pinterest-item .card-simple:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
-
-.pinterest-item .img-hover-zoom {
-  overflow: hidden;
-  border-radius: 0;
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.pinterest-item .article-banner {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.pinterest-item .img-hover-zoom:hover .article-banner {
-  transform: scale(1.03);
-}
-
-.pinterest-item img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: top;
-  margin: 0;
-  padding: 0;
-}
-
-.pinterest-item a img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
 .pinterest-item .article-title {
   font-size: 1rem !important;
-  line-height: 1.3 !important;
   margin: 10px 0 5px 0 !important;
-  padding: 0;
+  line-height: 1.25 !important;
 }
-
-.pinterest-item .article-title a {
-  color: #8082ff !important;
-  font-weight: 600 !important;
-  text-decoration: none;
-  transition: color 0.6s ease;
-}
-
-.pinterest-item .article-title a:hover {
-  color: #ffa97f !important;
-}
-
 .pinterest-item .article-style {
   font-size: 0.75rem !important;
-  line-height: 1.5 !important;
   color: rgba(0, 0, 0, 0.54) !important;
-  padding: 0;
-  margin: 0 !important;
   text-align: justify !important;
 }
-
 .pinterest-item .article-metadata {
-  padding: 0;
-  margin: 10px 0 !important;
   font-size: 0.75rem;
   color: #888;
 }
 
 @media (max-width: 992px) {
   .pinterest-masonry {
-    column-count: 2;
+    column-count: 2 !important;
     column-gap: 15px;
   }
-
-  .pinterest-item {
-    margin-bottom: 15px;
-  }
 }
-
 @media (max-width: 576px) {
   .pinterest-masonry {
-    column-count: 1;
+    column-count: 1 !important;
     column-gap: 0;
     padding: 15px 0;
-  }
-
-  .pinterest-item {
-    margin-bottom: 15px;
   }
 }
